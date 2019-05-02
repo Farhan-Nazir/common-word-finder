@@ -1,0 +1,26 @@
+{
+  "name": "common-word-finder",
+  "version": "1.0.0",
+  "description": "HIQ test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farhan-Nazir/common-word-finder.git"
+  },
+  "author": "Farhan Nazir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farhan-Nazir/common-word-finder.git/issues"
+  },
+  "homepage": "https://github.com/Farhan-Nazir/common-word-finder.git#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4"
+  }
+}
