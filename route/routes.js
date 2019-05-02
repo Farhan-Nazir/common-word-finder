@@ -12,15 +12,15 @@ router.route("/").post((req, res) => {
 
   let { textFile } = req.files;
   if (textFile.name.match(/\.(txt)$/i)) {
-    textFile.mv(`./views/temp/${textFile.name}`, function(err) {
+    textFile.mv(`./views/${textFile.name}`, function(err) {
       if (err) return res.status(500).send(err);
-      let data = solution(`./temp/${textFile.name}`);
+      let data = solution(`./views/${textFile.name}`);
       res.render("index", {
         word: data.word,
         total: data.count,
         result: `foo${data.word}bar`
       });
-      fs.unlink(`./temp/${textFile.name}`, err => {
+      fs.unlink(`./views/${textFile.name}`, err => {
         if (err) throw err;
         // if no error, file has been deleted successfully
         console.log("File deleted from temp folder!");
