@@ -1,8 +1,9 @@
 {
   "name": "common-word-finder",
   "version": "1.0.0",
-  "description": "HIQ test",
+  "description": "This API work to find the most common word in the uploaded text file and count it as well.",
   "main": "server.js",
+  "keywords": "common word finder text upload file",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
