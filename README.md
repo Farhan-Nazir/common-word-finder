@@ -1,6 +1,6 @@
 # Most Common Word Finder
 
-This API work to find the most common word in the uploaded text file and count it as well.
+This API work to find the most common word from the uploaded text file and count it as well.
 
 ### Install & Run
 
