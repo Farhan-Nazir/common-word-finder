@@ -12,7 +12,7 @@ router.route("/").post((req, res) => {
 
   let { textFile } = req.files;
   if (textFile.name.match(/\.(txt)$/i)) {
-    textFile.mv(`./temp/${textFile.name}`, function(err) {
+    textFile.mv(`./views/temp/${textFile.name}`, function(err) {
       if (err) return res.status(500).send(err);
       let data = solution(`./temp/${textFile.name}`);
       res.render("index", {
